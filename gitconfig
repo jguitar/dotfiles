@@ -1,6 +1,10 @@
 [user]
-	name = Juan F. Pérez
+	name = Juan F. Pérez
 	email = j.guitar@gmail.com
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
 [core]
 	excludesfile = /Users/juan/.gitignore_global
 	editor = /usr/bin/vim
@@ -10,9 +14,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[color]
-	ui = auto
-[credential]
-	helper = osxkeychain
 [push]
 	default = current
+[merge]
+[diff]
