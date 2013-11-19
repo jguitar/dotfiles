@@ -2,25 +2,24 @@
 alias rnk='cd ~/source/work/rankia'
 alias rnk2='cd ~/source/work/rankia2'
 alias vrm='cd ~/source/work/verema'
-alias agp='cd ~/source/work/aguapasion'
 alias mim='cd ~/source/work/mimandote'
+alias agp='cd ~/source/work/aguapasion'
 alias emg='cd ~/source/work/emergia'
-alias abm='cd ~/source/rails-samples/about_me'
+alias tvrm='cd ~/source/work/tienda-verema'
+alias ntm='cd ~/source/work/news_tematica'
+alias dfr='cd ~/source/dotfiles'
 alias src='cd ~/source'
 
-# rails (webrick)
-alias s1='rails s -p 3001'
-alias s2='rails s -p 3002'
-alias s3='rails s -p 3003'
-alias s4='rails s -p 3004'
-alias s5='rails s -p 3005'
-
 # rails (webrick with debugger)
-alias s1u='rails s -u -p 3001'
-alias s2u='rails s -u -p 3002'
-alias s3u='rails s -u -p 3003'
-alias s4u='rails s -u -p 3004'
-alias s5u='rails s -u -p 3005'
+alias s1='rails s -u -p 3001'
+alias s2='rails s -u -p 3002'
+alias s3='rails s -u -p 3003'
+alias s4='rails s -u -p 3004'
+alias s5='rails s -u -p 3005'
+
+# rails (unicorn)
+alias u1='unicorn --port 3001'
+alias u2='unicorn --port 3002 --config-file config/unicorn.rb'
 
 # rails (puma)
 alias p1='puma -p 3001'
@@ -34,8 +33,8 @@ alias rdbm='rake db:migrate'
 alias rdbp='rake db:test:prepare'
 alias rdbmp='rdbm && rdbp'
 alias tdl='tail -f log/development.log'
-alias rc='rails c'
-alias rcu='rails c test --debugger'
+alias rc='rails c --debugger'
+alias rct='rails c test --debugger'
 alias rdb='rails dbconsole'
 alias testall='rspec spec/. --require rspec/instafail --format RSpec::Instafail && jasmine-headless-webkit --color'
 
@@ -45,12 +44,16 @@ alias kruby='ps agxl | grep ruby'
 alias gst='git status -sb'
 alias gd='git diff'
 alias gds='git diff --staged'
-alias gl='git log --oneline --branches'
+alias gl='git log --oneline'
+
+export BUNDLER_EDITOR=mate
 
 # bash
-alias mbp='mate ~/.bash_profile'
 alias sbp='source ~/.bash_profile'
+alias mbp='mate -w ~/.bash_profile && sbp'
 alias vbp='vim ~/.bash_profile && sbp'
+alias miip="ifconfig | ack 'inet.*broadcast'"
+alias fuck_hashrockets="perl -pi -e 's/:([\w\d_]+)(\s*)=>/\1:/g'"
 
 # draw git with colors and puts the current branch
 parse_git_branch() {
