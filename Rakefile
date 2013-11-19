@@ -14,6 +14,9 @@ task :install do
   file_operation(Dir.glob(['gitconfig gitignore_global'])) if want_to_install?('git config')
   file_operation(Dir.glob(['vimrc.before', 'vimrc.after'])) if want_to_install?('vim setup with janus plugins')
   file_operation(Dir.glob('irbrc')) if want_to_install?('irb setup')
+  file_operation(Dir.glob('ackrc')) if want_to_install?('ack setup')
+  file_operation(Dir.glob('inputrc')) if want_to_install?('iTerm keys setup')
+  file_operation(Dir.glob('rspec')) if want_to_install?('RSpec setup')
 end
 
 task :default => 'install'
