@@ -28,24 +28,30 @@ alias ntm='cd ~/source/work/news_tematica'
 alias dfr='cd ~/source/dotfiles'
 alias src='cd ~/source'
 
-# Alias para Rails
+# rails (webrick with debugger)
 alias s1='rails s -u -p 3001'
 alias s2='rails s -u -p 3002'
 alias s3='rails s -u -p 3003'
 alias s4='rails s -u -p 3004'
 alias s5='rails s -u -p 3005'
 
+# rails (puma)
 alias p1='puma -p 3001'
 alias p2='puma -p 3002'
 alias p3='puma -p 3003'
 alias p4='puma -p 3004'
 alias p5='puma -p 3005'
 
+# rails (unicorn)
 alias u1='unicorn --port 3001'
 alias u2='unicorn --port 3002 --config-file config/unicorn.rb'
 
+# other alias
+alias miip="ifconfig | ack 'inet.*broadcast'"
+alias fuck_hashrockets="perl -pi -e 's/:([\w\d_]+)(\s*)=>/\1:/g'"
 alias testall='rspec spec/. --require rspec/instafail --format RSpec::Instafail && jasmine-headless-webkit --color'
 
+# git
 alias gds='git diff --staged'
 alias gl2='git log --oneline'
 
