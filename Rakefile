@@ -12,7 +12,7 @@ task :install do
   # this has all the runcoms from this directory.
   file_operation(Dir.glob('bash_profile')) if want_to_install?('bash: config and aliases')
   file_operation(Dir.glob(['gitconfig gitignore_global'])) if want_to_install?('git config')
-  file_operation(Dir.glob('vimrc')) if want_to_install?('vim setup')
+  file_operation(Dir.glob(['vimrc.before', 'vimrc.after'])) if want_to_install?('vim setup with janus plugins')
   file_operation(Dir.glob('irbrc')) if want_to_install?('irb setup')
 end
 
