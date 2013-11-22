@@ -55,6 +55,11 @@ alias testall='rspec spec/. --require rspec/instafail --format RSpec::Instafail 
 alias gds='git diff --staged'
 alias gl2='git log --oneline'
 
+
+# termit
+alias ten='termit en es'
+alias tes='termit es en'
+
 export BUNDLER_EDITOR=mate
 
 # Set to this to use case-sensitive completion
