@@ -57,7 +57,6 @@ alias gl2='git log --oneline'
 
 pasar_horas() { git log --since="$@" --pretty=format:"%Cblue%h %Cred%an %Cgreen%ai %Creset- %s" --author=Juan --no-merges }
 
-
 # termit
 alias ten='termit en es'
 alias tes='termit es en'
