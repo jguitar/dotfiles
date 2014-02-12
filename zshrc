@@ -53,7 +53,7 @@ alias testall='rspec spec/. --require rspec/instafail --format RSpec::Instafail 
 
 # git
 alias gds='git diff --staged'
-alias gl2='git log --oneline'
+alias gl2='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 
 pasar_horas() { git log --since="$@" --pretty=format:"%Cblue%h %Cred%an %Cgreen%ai %Creset- %s" --author=Juan --no-merges }
 
