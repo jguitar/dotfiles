@@ -18,7 +18,6 @@ alias vz='mvim ~/.zshrc && sz'
 
 # projects
 alias rnk='cd ~/source/work/rankia'
-alias rnk2='cd ~/source/work/rankia2'
 alias vrm='cd ~/source/work/verema'
 alias mim='cd ~/source/work/mimandote'
 alias agp='cd ~/source/work/aguapasion'
