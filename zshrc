@@ -45,6 +45,9 @@ alias p5='puma -p 3005'
 alias u1='unicorn --port 3001'
 alias u2='unicorn --port 3002 --config-file config/unicorn.rb'
 
+# faster than rlc
+alias clearlogs='echo -n > log/development.log && echo -n > log/test.log && rm log/*log.*'
+
 # other alias
 alias miip="ifconfig | ack 'inet.*broadcast'"
 alias fuck_hashrockets="perl -pi -e 's/:([\w\d_]+)(\s*)=>/\1:/g'"
