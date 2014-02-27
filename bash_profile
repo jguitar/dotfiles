@@ -10,6 +10,8 @@ alias ntm='cd ~/source/work/news_tematica'
 alias dfr='cd ~/source/dotfiles'
 alias src='cd ~/source'
 
+alias brocks='cd ~/Documents/blender/tests/corto-blender-rocks'
+
 # rails (webrick with debugger)
 alias s1='rails s -u -p 3001'
 alias s2='rails s -u -p 3002'
