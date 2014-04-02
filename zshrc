@@ -97,6 +97,3 @@ export BUNDLER_EDITOR=mate
 plugins=(rails git)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-export PATH=$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/mysql/bin:$PATH
