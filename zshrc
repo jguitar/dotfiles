@@ -24,7 +24,7 @@ alias agp='cd ~/source/work/aguapasion'
 alias emg='cd ~/source/work/emergia'
 alias tvrm='cd ~/source/work/tienda-verema'
 alias ntm='cd ~/source/work/news_tematica'
-alias dfr='cd ~/source/dotfiles'
+alias dfr='cd ~/source/jguitar/dotfiles'
 alias src='cd ~/source'
 
 # rails (webrick with debugger)
@@ -63,7 +63,7 @@ pasar_horas() { git log --since="$@" --pretty=format:"%Cblue%h %Cred%an %Cgreen%
 alias ten='termit en es'
 alias tes='termit es en'
 
-export BUNDLER_EDITOR=mate
+export BUNDLER_EDITOR=mvim
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -97,3 +97,6 @@ export BUNDLER_EDITOR=mate
 plugins=(rails git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH

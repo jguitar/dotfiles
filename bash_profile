@@ -7,7 +7,7 @@ alias agp='cd ~/source/work/aguapasion'
 alias emg='cd ~/source/work/emergia'
 alias tvrm='cd ~/source/work/tienda-verema'
 alias ntm='cd ~/source/work/news_tematica'
-alias dfr='cd ~/source/dotfiles'
+alias dfr='cd ~/source/jguitar/dotfiles'
 alias src='cd ~/source'
 
 alias brocks='cd ~/Documents/blender/tests/corto-blender-rocks'
