@@ -1,3 +1,5 @@
-color github
+if has("gui_running")
+  color github
+endif
 
 set shell=/bin/sh
