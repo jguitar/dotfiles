@@ -27,12 +27,12 @@ alias ntm='cd ~/source/work/news_tematica'
 alias dfr='cd ~/source/jguitar/dotfiles'
 alias src='cd ~/source'
 
-# rails (webrick with debugger)
-alias s1='rails s -u -p 3001'
-alias s2='rails s -u -p 3002'
-alias s3='rails s -u -p 3003'
-alias s4='rails s -u -p 3004'
-alias s5='rails s -u -p 3005'
+# rails (webrick)
+alias s1='rails s -p 3001'
+alias s2='rails s -p 3002'
+alias s3='rails s -p 3003'
+alias s4='rails s -p 3004'
+alias s5='rails s -p 3005'
 
 # rails (puma)
 alias p1='puma -p 3001'

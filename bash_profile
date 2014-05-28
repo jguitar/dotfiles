@@ -12,12 +12,12 @@ alias src='cd ~/source'
 
 alias brocks='cd ~/Documents/blender/tests/corto-blender-rocks'
 
-# rails (webrick with debugger)
-alias s1='rails s -u -p 3001'
-alias s2='rails s -u -p 3002'
-alias s3='rails s -u -p 3003'
-alias s4='rails s -u -p 3004'
-alias s5='rails s -u -p 3005'
+# rails (webrick)
+alias s1='rails s -p 3001'
+alias s2='rails s -p 3002'
+alias s3='rails s -p 3003'
+alias s4='rails s -p 3004'
+alias s5='rails s -p 3005'
 
 # rails (unicorn)
 alias u1='unicorn --port 3001'
@@ -35,8 +35,8 @@ alias rdbm='rake db:migrate'
 alias rdbp='rake db:test:prepare'
 alias rdbmp='rdbm && rdbp'
 alias tdl='tail -f log/development.log'
-alias rc='rails c --debugger'
-alias rct='rails c test --debugger'
+alias rc='rails c'
+alias rct='rails c test'
 alias rdb='rails dbconsole'
 alias testall='rspec spec/. --require rspec/instafail --format RSpec::Instafail && jasmine-headless-webkit --color'
 
