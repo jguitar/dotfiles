@@ -3,3 +3,5 @@ if has("gui_running")
 endif
 
 set shell=/bin/sh
+
+set colorcolumn=120
