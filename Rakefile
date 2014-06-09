@@ -18,6 +18,7 @@ task :install do
   file_operation(Dir.glob('inputrc')) if want_to_install?('iTerm keys setup')
   file_operation(Dir.glob('rspec')) if want_to_install?('RSpec setup')
   file_operation(Dir.glob('gemrc')) if want_to_install?('Gems setup')
+  file_operation(Dir.glob('tmux.conf')) if want_to_install?('tmux setup')
   file_operation(Dir.glob(['zshrc', 'zshrc.pre-oh-my-zsh'])) if want_to_install?('zsh setup')
 end
 
