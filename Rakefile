@@ -10,16 +10,7 @@ task :install do
   puts
 
   # this has all the runcoms from this directory.
-  file_operation(Dir.glob('bash_profile')) if want_to_install?('bash: config and aliases')
-  file_operation(Dir.glob(['gitconfig', 'gitignore_global'])) if want_to_install?('git config')
-  file_operation(Dir.glob(['vimrc.before', 'vimrc.after'])) if want_to_install?('vim setup with janus plugins')
-  file_operation(Dir.glob('irbrc')) if want_to_install?('irb setup')
-  file_operation(Dir.glob('ackrc')) if want_to_install?('ack setup')
-  file_operation(Dir.glob('inputrc')) if want_to_install?('iTerm keys setup')
-  file_operation(Dir.glob('rspec')) if want_to_install?('RSpec setup')
-  file_operation(Dir.glob('gemrc')) if want_to_install?('Gems setup')
-  file_operation(Dir.glob('tmux.conf')) if want_to_install?('tmux setup')
-  file_operation(Dir.glob(['zshrc', 'zshrc.pre-oh-my-zsh'])) if want_to_install?('zsh setup')
+  file_operation(Dir.glob('gitconfig.user')) if want_to_install?('git config.user')
 end
 
 task :default => 'install'
