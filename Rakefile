@@ -11,6 +11,7 @@ task :install do
 
   # this has all the runcoms from this directory.
   file_operation(Dir.glob('gitconfig.user')) if want_to_install?('git config.user')
+  file_operation(Dir.glob('vimrc.before')) if want_to_install?('vimrc before')
 end
 
 task :default => 'install'
