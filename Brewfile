@@ -16,6 +16,7 @@ brew 'hub'
 brew 'imagemagick'
 brew 'lame'
 brew 'macvim', args: ['with-lua', 'with-override-system-vim']
+brew 'mas'
 brew 'mongodb', restart_service: true
 brew 'node'
 brew 'openssl'
@@ -91,3 +92,5 @@ cask 'firefox'
 cask 'google-chrome'
 # others
 cask 'calibre'
+
+mas 'Tomato One', id: 907364780
