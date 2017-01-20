@@ -4,6 +4,9 @@ I'm trying to join all dot files because I'm using an iMac and a laptop and neve
 
 I've copied and adapted the code at Rakefile from [YADR project](https://github.com/skwp/dotfiles)
 
+After some time playing with brew bundle I've started using it. But I don't know what will happen in a new SO.
+So, install [Brew](https://github.com/Homebrew/brew) and [Brew Bundle](https://github.com/Homebrew/homebrew-bundle) and install all dependencies at Brewfile.
+
 ### How to use it
 
 1. Install [YADR project](https://github.com/skwp/dotfiles)
