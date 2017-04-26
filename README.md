@@ -15,3 +15,7 @@ cd dotfiles
 git branch whatever-era
 rake
 ```
+
+### Extras
+
+* Solarized for GNOME Terminal: https://github.com/Anthony25/gnome-terminal-colors-solarized
