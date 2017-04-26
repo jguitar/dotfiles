@@ -9,3 +9,4 @@ eval "$(pyenv init -)"
 
 # virtualenv setup
 export WORKON_HOME="$HOME/.virtualenvs"
+source /usr/local/bin/virtualenvwrapper.sh
