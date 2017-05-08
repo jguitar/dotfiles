@@ -1,2 +1,1 @@
 bind -n C-k clear-history
-setw -g mode-mouse on
