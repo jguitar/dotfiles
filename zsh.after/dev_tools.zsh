@@ -13,3 +13,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # ruby gems as executable
 export PATH=~/.gem/ruby/2.3.0/bin:$PATH
+
+source ~/.bin/tmuxinator.zsh
