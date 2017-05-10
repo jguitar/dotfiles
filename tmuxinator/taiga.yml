@@ -43,6 +43,9 @@ windows:
       panes:
         - cd taiga-contrib-burndown/front && gulp
         - cd taiga-contrib-burndown/front
+  - plugin-burndown-test:
+      panes:
+        - cd taiga-contrib-burndown/back && workon taiga && pytest
   - shell:
       panes:
         -
