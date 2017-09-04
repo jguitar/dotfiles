@@ -5,8 +5,6 @@ export NVM_DIR="$HOME/.nvm"
 # ruby gems as executable
 export PATH=~/.gem/ruby/2.3.0/bin:$PATH
 
-source ~/.bin/tmuxinator.zsh
-
 # android sdk and some tools
 export ANDROID_HOME=~/Android/Sdk
 export PATH=ANDROID_HOME:$PATH
