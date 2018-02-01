@@ -1,19 +1,33 @@
 # nvm setup
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# ruby gems as executable
-# export PATH=~/.gem/ruby/2.3.0/bin:$PATH
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
 
-# Create a JAVA_HOME variable, determined dynamically
-export JAVA_HOME=$(/usr/libexec/java_home)
-# Add that to the global PATH variable
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+# Java setup with Android Studio
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
 export PATH=${JAVA_HOME}/bin:$PATH
-# Set Android_HOME
 export ANDROID_HOME=~/Library/Android/sdk/
-# Add the Android SDK to the ANDROID_HOME variable
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH=$ANDROID_HOME/tools:$PATH
-#Set GRADLE_HOME
-# export GRADLE_HOME=/Library/gradle/gradle-3.2
-# export PATH=$PATH:$GRADLE_HOME/bin
+export GRADLE_HOME=/Applications/Android\ Studio.app/Contents/gradle/gradle-3.2
+export PATH=$PATH:$GRADLE_HOME/bin
