@@ -35,4 +35,4 @@ export GRADLE_HOME=/Applications/Android\ Studio.app/Contents/gradle/gradle-3.2
 export PATH=$PATH:$GRADLE_HOME/bin
 
 # rvm setup
-export PATH=${HOME}/.rvm/gems/ruby-2.4.1/bin
+export PATH=${HOME}/.rvm/gems/ruby-2.4.1/bin:$PATH
