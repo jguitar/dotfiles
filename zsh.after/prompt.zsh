@@ -1,1 +1,1 @@
-prompt powerline
+prompt agnoster
