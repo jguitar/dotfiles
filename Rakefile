@@ -13,7 +13,7 @@ task :install do
   file_operation('gitconfig.user') if want_to_install?('git config.user')
   file_operation('tmux.conf.user') if want_to_install?('tmux conf.user')
   file_operation('vimrc.before') if want_to_install?('vimrc before')
-  file_operation('zsh.after/aliases.zsh', '.zsh.after/aliases.zsh') if want_to_install?('vimrc before')
+  file_operation('zsh.after/aliases.zsh', '.zsh.after/aliases.zsh') if want_to_install?('aliases')
 end
 
 task :default => 'install'
