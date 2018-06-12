@@ -1,8 +1,10 @@
 # dotfiles
 
-I'm trying to join all dot files because I'm using an iMac and a laptop and never remember what things (or alias) can I do. And, also I wanted a dotfiles repo as I had seen to good developers.
+I'm trying to join all dot files because I'm using some devices and never remember what things (or aliases) can I do. And, also I wanted a dotfiles repo as I had seen to good developers.
 
 I've copied and adapted the code at Rakefile from [YADR project](https://github.com/skwp/dotfiles)
+
+## `brew bundle` (only for macOS)
 
 After some time playing with brew bundle I've started using it. But I don't know what will happen in a new SO.
 So, install [Brew](https://github.com/Homebrew/brew) and [Brew Bundle](https://github.com/Homebrew/homebrew-bundle) and install all dependencies at Brewfile.
