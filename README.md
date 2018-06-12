@@ -19,3 +19,9 @@ git clone https://github.com/jguitar/dotfiles.git
 cd dotfiles
 rake
 ```
+
+### Extras
+
+* Solarized for GNOME Terminal: https://github.com/Anthony25/gnome-terminal-colors-solarized
+* `zsh` default in GNOME Terminal: https://askubuntu.com/questions/342299/zsh-is-not-launched-while-opening-a-new-terminal-with-gnome-terminal
+* Install [`tmuxinator`](https://github.com/tmuxinator/tmuxinator)
