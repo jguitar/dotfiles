@@ -3,3 +3,5 @@
   email = 761794+jguitar@users.noreply.github.com
 [rebase]
   autosquash = true
+[pull]
+  ff = only
