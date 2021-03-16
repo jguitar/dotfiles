@@ -19,3 +19,9 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export PATH=$PATH:~/Documents/source/flutter/bin
 export PATH=$PATH:~/Documents/source/flutter/bin/cache/dart-sdk/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
+
+# Set openjdk first in the PATH
+export PATH=/usr/local/opt/openjdk/bin:$PATH
+
+# Let compilers to find openjdk
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
