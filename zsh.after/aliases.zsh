@@ -6,3 +6,6 @@ alias gbclean="git for-each-ref refs/heads/ --format='%(refname:short)' | grep -
 alias wip="ga && gcm 'wip --skip-ci'"
 alias dc="docker-compose"
 alias dcsetup="docker-compose run --rm web bin/setup"
+# override default "git push --force"
+alias gpf='git push --force-with-lease'
+alias gpff='git push --force'
