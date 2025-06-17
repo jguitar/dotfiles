@@ -16,6 +16,7 @@ task :install do
   file_operation('zsh.after/aliases.zsh', '.zsh.after/aliases.zsh') if want_to_install?('aliases')
   file_operation('zsh.after/prompt.zsh', '.zsh.after/prompt.zsh') if want_to_install?('set prompt')
   file_operation('zsh.after/dev_tools.zsh', '.zsh.after/dev_tools.zsh') if want_to_install?('dev_tools setup')
+  file_operation('zsh.after/heroku.zsh', '.zsh.after/heroku.zsh') if want_to_install?('heroku setup')
   file_operation('tmuxinator/taiga.yml', '.tmuxinator/taiga.yml') if want_to_install?('taiga setup')
 end
 
