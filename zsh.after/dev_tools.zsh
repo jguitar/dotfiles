@@ -6,6 +6,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # python setup
 export PATH="$(brew --prefix python)/libexec/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # nvm setup
 export NVM_DIR="$HOME/.nvm"
