@@ -12,6 +12,11 @@ h() {
     projects["GlobalAdmin:pro"]="barkibu-global-admin"
     unset project
 
+    if [[ $1 != "uat" ]]; then
+        echo "ERROR: There's no environment configured in this route, check the $HOME/Documents/source/dotfiles/zsh.after/heroku.sh" >&2
+        return 1
+    fi
+
     case $PWD in
         $HOME/Documents/source/pas* )
             project=${projects["PAS:$1"]:-$projects["PAS:pro"]}
