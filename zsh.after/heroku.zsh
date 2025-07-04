@@ -4,11 +4,11 @@ h() {
 
     declare -A projects
 
-    projects["PAS:pre"]="pas-uat"
+    projects["PAS:uat"]="pas-uat"
     projects["PAS:pro"]="pas-production"
-    projects["Funnel:pre"]="barkibu-insurance-uat"
+    projects["Funnel:uat"]="barkibu-insurance-uat"
     projects["Funnel:pro"]="barkibu-insurance-production"
-    projects["GlobalAdmin:pre"]="barkibu-global-admin-staging"
+    projects["GlobalAdmin:uat"]="barkibu-global-admin-staging"
     projects["GlobalAdmin:pro"]="barkibu-global-admin"
     unset project
 
