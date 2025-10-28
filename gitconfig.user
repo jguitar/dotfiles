@@ -1,7 +1,3 @@
 [user]
-  name = Juan F. Pérez
+  name = Juan Fco. Pérez
   email = 761794+jguitar@users.noreply.github.com
-[rebase]
-  autosquash = true
-[pull]
-  ff = only
