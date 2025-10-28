@@ -29,7 +29,8 @@ brew install \
   git \
   heroku \
   rbenv \
-  wget
+  wget \
+  z
 ```
 
 - Install [Oh My Zsh](https://ohmyz.sh/)
