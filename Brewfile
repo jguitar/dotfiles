@@ -80,7 +80,6 @@ brew 'sane-backends', args: ['universal']
 brew 'svgcleaner'
 brew 'the_silver_searcher'
 brew 'tmate'
-brew 'tmux'
 brew 'tree'
 brew 'unrar'
 brew 'utf8proc'
