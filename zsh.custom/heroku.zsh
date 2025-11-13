@@ -12,7 +12,7 @@ h() {
     projects["GlobalAdmin:pro"]="barkibu-global-admin"
     unset project
 
-    if [[ $1 != "uat" ]]; then
+    if [[ $1 != "uat" && $1 != "pro" ]]; then
         echo "ERROR: There's no environment configured in this route, check the $HOME/Documents/source/dotfiles/zsh.after/heroku.sh" >&2
         return 1
     fi

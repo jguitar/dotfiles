@@ -1,3 +1,5 @@
 [user]
   name = Juan Fco. Pérez
   email = 761794+jguitar@users.noreply.github.com
+[pull]
+  ff = only
