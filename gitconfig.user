@@ -3,3 +3,5 @@
   email = 761794+jguitar@users.noreply.github.com
 [pull]
   ff = only
+[push]
+  autoSetupRemote = true
