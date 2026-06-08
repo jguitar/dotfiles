@@ -13,21 +13,21 @@ hbackup() {
     unset app
 
     case $PWD in
-        $HOME/Documents/source/pas* )
+        $HOME/Documents/source/barkibu/pas* )
             app=${apps["PAS:$1"]:-$apps["PAS:pre"]}
             project=pas
             db_user=pas_system
             db_name=pas_dev
             docker_db_container=pas-db-1
         ;;
-        $HOME/Documents/source/barkibu_insurance* )
+        $HOME/Documents/source/barkibu/barkibu_insurance* )
             app=${apps["Funnel:$1"]:-$apps["Funnel:pre"]}
             project=barkibu_insurance
             db_user=postgres
             db_name=barkibu_insurance_dev
             docker_db_container=barkibu_insurance-postgres-1
         ;;
-        $HOME/Documents/source/global_admin* )
+        $HOME/Documents/source/barkibu/global_admin* )
             app=${apps["GlobalAdmin:$1"]:-$apps["GlobalAdmin:pre"]}
             project=global_admin
             db_user=postgres

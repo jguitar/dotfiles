@@ -18,13 +18,13 @@ h() {
     fi
 
     case $PWD in
-        $HOME/Documents/source/pas* )
+        $HOME/Documents/source/barkibu/pas* )
             project=${projects["PAS:$1"]:-$projects["PAS:pro"]}
         ;;
-        $HOME/Documents/source/barkibu_insurance* )
+        $HOME/Documents/source/barkibu/barkibu_insurance* )
             project=${projects["Funnel:$1"]:-$projects["Funnel:pro"]}
         ;;
-        $HOME/Documents/source/global_admin* )
+        $HOME/Documents/source/barkibu/global_admin* )
             project=${projects["GlobalAdmin:$1"]:-$projects["GlobalAdmin:pro"]}
         ;;
     esac
