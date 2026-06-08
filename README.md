@@ -34,3 +34,8 @@ brew install \
 ```
 
 - Install [Oh My Zsh](https://ohmyz.sh/)
+- Link the custom zsh files into oh-my-zsh by running:
+```
+./link-zsh-custom.sh
+```
+This symlinks every `*.zsh` file in `zsh.custom/` into `~/.oh-my-zsh/custom` so they load automatically. Re-run it any time you add a new file.
